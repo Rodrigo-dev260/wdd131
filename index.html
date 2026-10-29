@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box-Model</title>
-    <link rel="stylesheet" href="styles/base.CSS">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Rodrigo Fernando da Silva</title>
+
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Rodrigo Fernando da Silva's home page, with a personal introduction, information about Brazil, and web development resources.">
+    <meta name="author" content="Rodrigo Fernando da Silva">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -23,11 +33,30 @@
         <h1>Rodrigo Fernando da Silva</h1>
         <section class="card">
             <h2>About Me</h2>
+            <img 
+            class="profile"
+            src="images/rodrigo.jpg" 
+            alt="Portrait of Rodrigo Fernando da Silva">
             <p>
                 My name is Rodrigo. I am from Brazil and work as a cook.
                 I am studying web development and learning HTML, CSS, 
                 JavaScript, and Python.
             </p>
+            <h3 class="country-title">Brazil</h3>
+            <figure class="country-flag">
+    <img
+        src="images/brazil-flag.png"
+        alt="Flag of Brazil"
+        width="160"
+    >
+    <figcaption>Official Flag of Brazil</figcaption>
+</figure>
+
+<p>
+    Brazil is my home country. It is known for its cultural
+    diversity, beautiful beaches, and varied landscapes.
+    Portuguese is its official language.
+</p>
         </section>
         <section class="card">
             <h2>Web Development Resources</h2>
@@ -45,7 +74,10 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Rodrigo Silva | Brazil</p>
+        <p>
+            &copy; <span id="currentyear"></span> 
+            Rodrigo Silva | Brazil
+        </p>
         <p id="lastModified"></p>
     </footer>
 </body>

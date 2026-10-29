@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -92,3 +92,39 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.profile {
+    float: right;
+    width: 150px;
+    max-width: 40%;
+    height: auto;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.country-title {
+    clear: both;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.country-flag {
+    float: left;
+    margin: 0 1rem 1rem;
+    text-align: center;
+}
+
+.country-flag img {
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+}
+
+.country-flag {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
