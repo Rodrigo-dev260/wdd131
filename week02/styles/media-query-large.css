@@ -1,0 +1,8 @@
+@media screen and (min-width: 500px) {
+    body {
+    background-color: #fff;
+    color: #000;
+    grid-template-columns: 1fr 1fr;
+    display: ;
+    }
+}
