@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>China - Country Information & Weather</title>
+  <meta name="description" content="Informational page about China, featuring key country data and current weather conditions.">
+  <meta name="author" content="Rodrigo">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS and JS with defer -->
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>China</h1>
+  </header>
+
+  <main>
+    <!-- Responsive Hero Image in WebP -->
+    <div class="hero">
+      <picture>
+        <source srcset="images/china-large.webp" media="(min-width: 768px)">
+        <img src="images/china-small.webp" alt="Scenic view of the Great Wall of China" width="1200" height="600">
+      </picture>
+    </div>
+
+    <!-- Data Card -->
+    <section class="card data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 9,596,961 sq km</li>
+        <li><strong>Population:</strong> 1,411,750,000</li>
+        <li><strong>Capital:</strong> Beijing</li>
+        <li><strong>Languages:</strong> Mandarin</li>
+        <li><strong>Currency:</strong> Renminbi / Yuan (CNY)</li>
+        <li><strong>Time Zone:</strong> UTC+8</li>
+        <li><strong>Calling Code:</strong> +86</li>
+        <li><strong>Internet TLD:</strong> .cn</li>
+      </ul>
+    </section>
+
+    <!-- Weather Card -->
+    <section class="card weather">
+      <h2>Weather</h2>
+      <img src="images/weather.svg" alt="Partly cloudy weather icon" class="weather-icon" width="64" height="64">
+      <ul>
+        <li><strong>Temperature:</strong> <span id="temp">8</span> °C</li>
+        <li><strong>Conditions:</strong> Partly Cloudy</li>
+        <li><strong>Wind:</strong> <span id="wind">12</span> km/h</li>
+        <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Rodrigo | Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
