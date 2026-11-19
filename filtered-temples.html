@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a responsive photo gallery of temples from around the world, created for the WDD 131 Dynamic Web Fundamentals course.">
+    <meta name="author" content="Rodrigo Fernando da Silva">
+    <title>Photo Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Temple Album</p>
+        <nav>
+            <button id="menu-button" type="button">☰</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="gallery">
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Rodrigo Fernando da Silva | Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
